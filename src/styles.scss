@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+// Variable overrides first
+// $primary: #156460;
+// $enable-shadows: true;
+
+// Then import Bootstrap
+@import "assets/styles/bootstrap-imports.scss";
