@@ -9,7 +9,7 @@ export class ProfilePictureComponent {
   
   @Input() ImageSize: number = 40;
   @Input() DynamicHeight: boolean = false;
-  ImageURL: string = (window.location.hostname === 'localhost' ? '' : window.location.hostname) + '/assets/images/dp.jpg';
+  ImageURL: string = (window.location.hostname === 'localhost' ? '' : ('https://' + window.location.hostname)) + '/assets/images/dp.jpg';
 
 
 }

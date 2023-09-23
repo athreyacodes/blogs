@@ -12,7 +12,7 @@ import { ProfilePictureComponent } from './common/components/profile-picture/pro
 import { BackgroundComponent } from './common/components/background/background.component';
 import { HomeComponent } from './core/home/home.component';
 import { BlogComponent } from './core/blog/blog.component';
-import { BlogCardComponent } from './common/blog-card/blog-card.component';
+import { BlogCardComponent } from './common/components/blog-card/blog-card.component';
 
 @NgModule({
   declarations: [
