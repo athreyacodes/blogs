@@ -1,0 +1,2 @@
+<img *ngIf="DynamicHeight" [src]="ImageURL" class="box-shadow-high" dynamicImageHeight>
+<img *ngIf="!DynamicHeight" [src]="ImageURL" class="box-shadow-high" [width]="ImageSize" [height]="ImageSize">
