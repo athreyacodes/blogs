@@ -1,13 +1,30 @@
-<mat-toolbar color="primary">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+
+  <mat-toolbar color="primary" class="mat-elevation-z4">
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
-    </button>
-    <span>My App</span>
+    </button> -->
+    <app-profile-picture class="c-pointer" [matTooltip]="'Athreya M R'" ></app-profile-picture>
+    <h2 class="mx-3">{{ title || 'My Blogs'}}</h2>
     <span class="spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <a target="_blank" [href]="githubUrl">
+      <button mat-icon-button [matTooltip]="'Open this Github repo'">
+        <app-github-icon></app-github-icon>
+      </button>
+    </a>
+
+    <a target="_blank" [href]="linkedInUrl">
+      <button mat-icon-button [matTooltip]="'LinkedIn profile'">
+        <app-linkedin-icon></app-linkedin-icon>
+      </button>
+    </a> 
+
+    <a target="_blank" [href]="portfolioUrl">
+      <button mat-icon-button [matTooltip]="'Portfolio'">
+        <mat-icon>face_retouching_natural</mat-icon>
+      </button>
+    </a> 
+
+    <button mat-icon-button class="example-icon d-none" [matTooltip]="'Share this blog'" >
       <mat-icon>share</mat-icon>
     </button>
   </mat-toolbar>
