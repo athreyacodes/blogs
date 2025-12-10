@@ -25,6 +25,7 @@
               }
             ],
             "styles": [
+              "node_modules/layers-ui/layers.min.css",
               "src/styles.css"
             ]
           },
